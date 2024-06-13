@@ -4,16 +4,24 @@
     box-sizing: border-box;
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-family:cursive;
+    scroll-behavior: smooth;
+
 }
+
+
 
 body{
     overflow-x: hidden;
     background-color: white;
     color: black;
-
+     /* background-color: black;
+    color: white; */
+    scroll-behavior: smooth;
 }
 
 .dark-mode{
+     background-color: white;
+    color: black;
     background-color: black;
     color: white;
     
@@ -22,10 +30,15 @@ body{
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
 .header-section{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +50,7 @@ html {
     display: grid;
     grid-template-columns: 20% 1fr 10%;
     box-shadow: 0 2px 5px #999999;
+  
  
 }
 
@@ -142,6 +156,7 @@ html {
                 grid-template-columns: 60% 30% 1fr;
                 padding: .6rem;
                 height: 50px;
+                position: fixed;
         }
 
                  /* .nav-link:link,
@@ -319,9 +334,6 @@ Home section
 .hero-img img{
     width: 70%;
         height: 100%;
-
-  
-   
 }
 
 
@@ -371,7 +383,6 @@ Home Responsive code
             grid-template-columns:  1fr;
             margin-left: 4rem;
             margin-right: 2rem;
-            
         }
 
                 .hero-img {
@@ -477,3 +488,5 @@ Home Responsive code
 =============================================
           About section
 ============================================= */
+
+
